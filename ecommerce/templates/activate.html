@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+Hi {{user.username}}
+please click this link to verify your Accountant
+
+
+http://{{domain}}{%url 'activate' uidb64=uid token=token %}
+
+
+{% endautoescape %}
